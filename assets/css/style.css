@@ -10667,6 +10667,10 @@ padding: 20px;
   .testim-controls.testim-controls-mobile {
     display: none !important;
   }
+
+  .testim-crv .testim-swiper2 .item {
+    height: 100vh;
+  }
 }
 
 @media all and (max-width: 768px) {
