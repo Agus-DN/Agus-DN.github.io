@@ -691,7 +691,7 @@ img {
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
-
+/*
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -713,7 +713,7 @@ img {
   transform: translate(-50%, -50%) scale(8);
   opacity: .1;
 }
-
+*/
 .rolling-text {
   display: inline-block;
   overflow: hidden;
