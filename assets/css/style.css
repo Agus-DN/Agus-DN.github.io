@@ -10828,6 +10828,13 @@ padding: 20px;
     padding-left: 0px !important;
     width: 100%;
   }
+  .linea-contacto span {
+    font-size: 15px;
+  }
+
+  #datos-contacto {
+    margin-top: 20px;
+  }
 
 }
 
