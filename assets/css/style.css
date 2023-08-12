@@ -10916,7 +10916,6 @@ padding: 20px;
 
 @media all and (max-width: 768px) {
   .contenedor-datos-contacto {
-    background-color: red;
     padding-left: 0px;
     padding-right: 0px;
   }
