@@ -10491,17 +10491,17 @@ header.in-box {
   background: #0C1628;
 }
 .testimonios .item {
-  min-height: 70vh;
+ 
 }
 .testimonios .item p {
   font-style: italic;
   font-weight: 700 !important;
   line-height: 1.5;
-  min-height: 30vh;
+  
 }
 .testimonios .test_cargo {
   font-family: 'Roboto';
-  min-height: 10vh;
+  
   align-items: start;
 }
 
