@@ -2847,7 +2847,7 @@ body.loaded {
   top: 0;
   width: 100vw;
   height: 110vh;
-  fill: #1a1a1a;
+  fill: #1B2D4D;
 }
 
 .loader-wrap .loader-wrap-heading .load-text {
@@ -10912,6 +10912,14 @@ padding: 20px;
 
 .fs-23 {
   font-size: 23px;
+}
+
+@media all and (max-width: 768px) {
+  .contenedor-datos-contacto {
+    background-color: red;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 
