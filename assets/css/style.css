@@ -3103,7 +3103,6 @@ body.loaded {
   background: #1d1d1d;
   border-color: rgba(255, 255, 255, 0.05);
   padding: 0;
-  position: fixed;
   top: -80px;
   -webkit-transition: -webkit-transform .8s;
   transition: -webkit-transform .8s;
@@ -10947,6 +10946,9 @@ padding: 20px;
   }
   #smooth-wrapper {
     border: 5px solid white !important;
+  }
+  body {
+    border: 4px solid red !important;
   }
 }
 .filter {
