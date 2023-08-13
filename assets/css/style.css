@@ -10945,6 +10945,9 @@ padding: 20px;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+  #smooth-wrapper {
+    border: 5px solid white !important;
+  }
 }
 .filter {
   font-family: 'Roboto';
