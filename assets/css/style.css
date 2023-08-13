@@ -10940,6 +10940,11 @@ padding: 20px;
   .tabs-contratacion .filter li a {
     border-radius: none !important;
   }
+  .tabs-ubicacion-cont-desktop,
+  .tab-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 .filter {
   font-family: 'Roboto';
