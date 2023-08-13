@@ -10669,7 +10669,7 @@ padding: 20px;
   }
 
   .testim-crv .testim-swiper2 .item {
-    height: 100vh;
+    
   }
 }
 
@@ -10930,8 +10930,20 @@ padding: 20px;
     padding-left: 0px;
     padding-right: 0px;
   }
+  .tabs-contratacion .filter {
+    font-size: 13px;
+  }
+  .filter li:not(:last-child)  {
+    border-right: 2px solid white;
+    border-radius: 0 !important;
+  }
+  .tabs-contratacion .filter li a {
+    border-radius: none !important;
+  }
 }
-
+.filter {
+  font-family: 'Roboto';
+}
 
 
 
