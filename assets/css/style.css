@@ -10945,7 +10945,7 @@ padding: 20px;
     padding-right: 0px !important;
   }
   #smooth-wrapper {
-   
+   overflow-x: hidden;
   }
   body {
     
