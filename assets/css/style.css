@@ -3059,6 +3059,7 @@ body.loaded {
   -webkit-transform: translate(0) !important;
   -ms-transform: translate(0) !important;
   transform: translate(0) !important;
+  position: fixed;
 }
 
 .navbar.nav-crev.nav-scroll {
@@ -5897,7 +5898,7 @@ footer .bg-pattern {
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
-  width: calc(100% + 60px);
+  /* width: calc(100% + 60px); */
   margin-left: -30px;
   background: #0A1E3C;
 }
