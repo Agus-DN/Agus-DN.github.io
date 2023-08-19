@@ -10786,6 +10786,13 @@ padding: 20px;
     overflow: hidden;
     border-radius: 0px 0px 10px 10px;    
   }
+  .portfolio-crv .filter li:nth-child(3) {
+    border: 0 !important;
+  }
+  .filter-tab-center {
+    width: 100%;
+    margin-top: 8px;
+  }
   .masonry .inner{
     overflow: hidden;
   }
