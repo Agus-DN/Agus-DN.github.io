@@ -10875,7 +10875,7 @@ padding: 20px;
   display: flex;
 }
 .header-buttons-landing a {
-  width: 50%;
+  width: 100%;
   display: flex;
   margin-left: 0 !important;
   padding: 8px;
