@@ -10671,6 +10671,10 @@ padding: 20px;
   .testim-crv .testim-swiper2 .item {
     
   }
+  .br-filter,
+  .filter-tab-center {
+    display: none !important;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -10788,6 +10792,9 @@ padding: 20px;
   }
   .portfolio-crv .filter li:nth-child(3) {
     border: 0 !important;
+  }
+  .filter-tab-desktop {
+    display: none;
   }
   .filter-tab-center {
     width: 100%;
