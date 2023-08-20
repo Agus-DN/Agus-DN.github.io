@@ -10853,6 +10853,10 @@ padding: 20px;
   #datos-contacto {
     margin-top: 20px;
   }
+
+  .brief-pedido-descripcion {
+    display: none;
+  }
   
 
 }
@@ -10908,6 +10912,11 @@ padding: 20px;
   border-radius: 10px;
   padding: 30px;
   width: 48%;
+}
+
+.brief-pedido-mobile,
+.brief-descripcion-mobile {
+  width: 100% !important;
 }
 
 .brief-datos,
