@@ -10741,6 +10741,13 @@ padding: 20px;
   .header-buttons button:last-child {
     margin-top: 10px !important;
   }
+  .header-buttons #datos-contacto {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header-buttons #datos-contacto .col-12 {
+    padding: 0;
+  }
   .serv-item-desktop,
   .servicios-desktop {
     display: none !important;
