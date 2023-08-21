@@ -10706,7 +10706,7 @@ padding: 20px;
   .header-tags {
     padding: 0px !important;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
   }
   .header-tags span {
@@ -10714,6 +10714,8 @@ padding: 20px;
     padding: 4px !important;
     padding-top: 6px !important;
     padding-bottom: 6px !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
   }
   .header-tags .tag {
     font-size: 11px !important;
@@ -10861,7 +10863,9 @@ padding: 20px;
   .brief-pedido-descripcion {
     display: none;
   }
-  
+  .crev-header h1 {
+    font-size: 50px;
+  }
 
 }
 
