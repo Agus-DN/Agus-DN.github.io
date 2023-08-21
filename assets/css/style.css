@@ -9729,7 +9729,7 @@ header.in-box {
     padding-bottom: 15px;
   }
   .navbar .navbar-collapse {
-    max-height: 440px;
+   /* max-height: 440px; */
     overflow: auto;
   }
   .navbar .navbar-collapse::-webkit-scrollbar {
@@ -10676,6 +10676,9 @@ padding: 20px;
   .filter-tab-center {
     display: none !important;
   }
+  .nav-link-mobile {
+    display: none;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -10976,6 +10979,9 @@ padding: 20px;
   }
   body {
     
+  }
+  .nav-link-mobile img {
+    width: 40px;
   }
 }
 .filter {
