@@ -9786,6 +9786,7 @@ header.in-box {
     padding: 15px 30px 10px;
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
   }
   .navbar .navbar-nav .nav-item:last-of-type .nav-link {
     padding-bottom: 0;
