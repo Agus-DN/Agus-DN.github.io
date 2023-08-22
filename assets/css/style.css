@@ -10941,8 +10941,7 @@ padding: 20px;
 }
 
 .contenedor-video {
-  height: 390px;
-  overflow: hidden;
+  
   text-align: center;
 }
 
@@ -10950,8 +10949,12 @@ padding: 20px;
 .contenedor-video iframe,
 .contenedor-imagen img {
   border-radius: 20px;
+  height: 300px;
+  background-size: 100%;
 }
-
+.contenedor-video video {
+  object-fit: fill !important;
+}
 .contenedor-imagen {
   text-align: center;
   width: 300px;
