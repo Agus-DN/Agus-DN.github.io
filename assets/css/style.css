@@ -10913,6 +10913,9 @@ padding: 20px;
 .header-buttons-landing a button {
   margin-left: 0 !important;
 }
+.header-buttons-landing #datos-contacto h4 {
+  text-align: center;
+}
 .header-datos-landing {
   text-align: center !important;
   margin: 0 auto;
