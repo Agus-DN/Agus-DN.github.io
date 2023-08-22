@@ -11007,6 +11007,12 @@ padding: 20px;
   .row.imagenes-landings {
     display: none;
   }
+  .row.imagenes-landings.imagen-landing-uno {
+    display: block;
+  }
+  .row.imagenes-landings.imagen-landing-uno img {
+    width: 300px;
+  }
 }
 .filter {
   font-family: 'Roboto';
