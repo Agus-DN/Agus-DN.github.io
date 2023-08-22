@@ -11000,6 +11000,13 @@ padding: 20px;
   .nav-link-mobile img {
     width: 40px;
   }
+  .contenedor-imagen {
+    margin: 0 auto;
+  }
+  .row.masonry.imagenes-landings,
+  .row.imagenes-landings {
+    display: none;
+  }
 }
 .filter {
   font-family: 'Roboto';
