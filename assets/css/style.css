@@ -10670,7 +10670,8 @@ padding: 20px;
   .sobre-mi-experiencias-mobile,
   .filter-mobile,
   #tabs-portfolio-mobile,
-  .tabs-contratacion-mobile {
+  .tabs-contratacion-mobile,
+  .gallery-portfolio-mobile {
     display: none !important;
   }
   .testim-controls.testim-controls-mobile {
