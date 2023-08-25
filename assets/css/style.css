@@ -432,6 +432,10 @@ img {
   font-style: normal;
 }
 
+.butn-contacto-header {
+  
+}
+
 .butn.butn-md {
   padding: 14px 35px;
 }
@@ -11035,6 +11039,14 @@ padding: 20px;
   font-family: 'Roboto';
 }
 
+.contenedor-datos-contacto-landings a {
+  display: grid;
+
+}
+
+.contenedor-datos-contacto-landings h4 {
+  text-align: center;
+}
 
 
 
