@@ -10926,7 +10926,17 @@ padding: 20px;
 .header-anuncios-catalogo-chill {
   background-image:
   linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
-  url('/../assets/imgs/landings/header-anuncios-puv-eg.jpg');
+  url('/../assets/imgs/landings/fondo-chill.jpg');
+}
+.header-anuncios-mibo {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-mibo.jpg');
+}
+.header-anuncios-graficos-eg {
+  background-image:
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  url('/../assets/imgs/landings/fondo-anuncios-graficos-eg.jpg');
 }
 .header-buttons-landing a button {
   width: 100% !important;
