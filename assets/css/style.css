@@ -11028,7 +11028,7 @@ padding: 20px;
   background-size: 100%;
 }
 .contenedor-video video {
-  object-fit: fill !important;
+  
 }
 .contenedor-imagen {
   text-align: center;
