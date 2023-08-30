@@ -11099,6 +11099,11 @@ padding: 20px;
   text-align: center;
 }
 
+.contenedor-imagen a,
+.contenedor-imagen img {
+  border-radius: 15px;
+  overflow: hidden;
+}
 
 
 
