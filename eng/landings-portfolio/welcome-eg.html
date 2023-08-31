@@ -15,7 +15,7 @@
     <title>Portfolio Agustín Di Noto</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets/imgs/favicon.ico">
+    <link rel="shortcut icon" href="https://agus-dn.github.io/assets/imgs/icono-adn.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
@@ -100,18 +100,16 @@
 
                 <!-- navbar links -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                        <include src="../assets/componentes/nav/navbar.html"></include>
-                    </div>
+                    
                 </div>
                 <div class="link-esp">
                     <div class="nav-item">
-                        <a class="nav-link" href="page-contact.html"><img src="../assets/imgs/link-ESP.png" /></a>
+                        <a class="nav-link" href="https://agus-dn.github.io/"><img src="/eng/assets/imgs/link-esp-des.png" /></a>
                     </div>    
                 </div>
                 <div class="link-esp">
                     <div class="nav-item">
-                        <a class="nav-link" href="page-contact.html"><img src="../assets/imgs/link-eng.png" /></a>
+                        <a class="nav-link" href="https://agus-dn.github.io/eng/index-eng.html"><img src="https://agus-dn.github.io/assets/imgs/link-eng-ac.png" /></a>
                     </div>    
                 </div>
             </div>
@@ -236,24 +234,31 @@
                         <div class="sec-lg-head mb-60">
                             <div class="position-re text-center">
                                 <h2 class="d-rotate wow">
-                                    <span class="rotate-text">Muestras</span>
+                                    <span class="rotate-text">Sample</span>
                                 </h2>
                             </div>
                         </div>
         
-                        <div class="row imagenes-landings">
+                        <div class="row imagenes-landings imagen-landing-uno">
         
-                            <div class="col-lg-3 col-md-6 items mb-30 contenedor-imagen">
-                                <h2>Reducir peso del video</h2>
-                                <a href="https://www.behance.net/gallery/116898423/Plantillas-RRSS-CTF">
-                                    <img src="../assets/imgs/landings/previews/preview-bienvenida-eg.png" alt="">
-                                </a>    
+                            <div class="col-lg-3 col-md-6 items mb-30 contenedor-video">
+                                <video poster="/eng/assets/imgs/landings/previews/preview-bienvenida-eg.png" controls>
+                                    <source src="/eng/assets/imgs/landings/bienvenida-eg.mp4" type="video/mp4">
+                                   </video> 
                             </div>
     
                         </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-6">
-                                <include src="../assets/componentes/landings/header-buttons-landings.html"></include>
+                        <div class="row d-flex justify-content-center mt-40">
+                            <div id="seccion-contacto" class="col-12 col-lg-4 contenedor-datos-contacto contenedor-datos-contacto-landings" data-scroll-index="5">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <a href="https://agus-dn.github.io/eng/index-eng.html"><button class="butn butn-md butn-radius">portfolio</button></a>
+                                    </div>
+                                    <div class="col-lg-12 mt-20">
+                                        <include src="../assets/componentes/datos-contacto.html"></include>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                         
