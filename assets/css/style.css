@@ -21,7 +21,9 @@
   outline: none;
   list-style: none;
 }
-
+:root {
+  --color-celeste: #9FEAF4;
+}
 body {
   color: #fff;
   background-color: #1d1d1d;
@@ -11104,6 +11106,10 @@ padding: 20px;
 .contenedor-imagen img {
   border-radius: 15px;
   overflow: hidden;
+}
+
+.sec-lg-head h6 {
+  color: var(--color-celeste);
 }
 
 
