@@ -3059,7 +3059,9 @@ body.loaded {
   border-bottom: 2px solid transparent;
   z-index: 999;
 }
-
+#smooth-wrapper > nav {
+  position: fixed;
+}
 .navbar.nav-crev {
   width: calc(100% - 80px);
   left: 40px;
@@ -3073,14 +3075,14 @@ body.loaded {
   -webkit-transform: translate(0) !important;
   -ms-transform: translate(0) !important;
   transform: translate(0) !important;
-  position: fixed;
+  position: fixed !important;
 }
 
 .navbar.nav-crev.nav-scroll {
   background: #1d1d1d;
   border-color: rgba(255, 255, 255, 0.05);
   padding: 0;
-  position: fixed;
+  position: fixed !important;
   top: -80px;
   -webkit-transform: translateY(80px) !important;
   -ms-transform: translateY(80px) !important;
