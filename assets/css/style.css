@@ -9745,6 +9745,7 @@ header.in-box {
   .navbar .navbar-collapse {
    /* max-height: 440px; */
     overflow: auto;
+    height: 100vh;
   }
   .navbar .navbar-collapse::-webkit-scrollbar {
     display: none;
