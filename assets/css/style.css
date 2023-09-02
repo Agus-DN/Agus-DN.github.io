@@ -10672,7 +10672,9 @@ padding: 20px;
   margin-left: 10px;
 }
 @media all and (min-width: 769px) {
- 
+  .titulo-web-mobile {
+    display: none !important;
+  }
   .serv-item-mobile,
   .servicios-mobile,
   .sobre-mi-experiencias-mobile,
@@ -10699,6 +10701,10 @@ padding: 20px;
 }
 
 @media all and (max-width: 768px) {
+  .titulo-web-mobile {
+    display: block;
+    font-size: 80px !important;
+  }
   .header-portfolio {
     padding-top: 100px !important;
   }
@@ -11054,6 +11060,9 @@ padding: 20px;
 }
 
 @media all and (max-width: 768px) {
+  .titulo-web-desktop {
+    display: none;
+  }
   .contenedor-datos-contacto {
     padding-left: 0px;
     padding-right: 0px;
