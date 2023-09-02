@@ -11038,6 +11038,9 @@ padding: 20px;
 }
 .contenedor-imagen {
   text-align: center;
+}
+
+.portfolio-branding-swiper .contenedor-imagen {
   width: 300px;
 }
 
