@@ -363,6 +363,10 @@ figure {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
+.txt-italic {
+  font-style: italic;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -1095,7 +1099,7 @@ img {
 }
 
 .main-marq .box .item {
-  padding: 0 30px;
+  
 }
 
 .main-marq .box .item h4 {
@@ -5910,7 +5914,7 @@ footer .bg-pattern {
 .marquee {
   position: relative;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 20px 0;
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
@@ -5919,7 +5923,7 @@ footer .bg-pattern {
   background: #0A1E3C;
 }
 .marquee-portfolio {
-  margin-top: -40px;
+  margin-top: 20px;
 }
 
 .marquee:before {
@@ -5936,9 +5940,61 @@ footer .bg-pattern {
   z-index: 3;
 }
 
+
 .marquee h4 {
   font-size: 35px;
 }
+
+/*prueba */
+.marquee-portfolio-wrapper {
+  position: relative;
+  background: #FA0C4E;
+  height: 80px;
+}
+
+.marquee-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; 
+  z-index: 0; 
+  transform: skewY(-1deg); 
+  transform-origin: top left; 
+}
+
+.marquee-portfolio {
+  position: absolute;
+  z-index: 1; /* Por encima del fondo */
+  background-color: #0a1b39; /* Azul oscuro */
+  padding: 20px 0; /* Espaciado del contenido */
+  overflow: hidden;
+  transform: skewY(-1deg);
+  margin-top: -25px; 
+}
+
+.marquee-portfolio .main-marq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-portfolio .slide-har {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-portfolio .box {
+  display: flex;
+  gap: 50px; /* Espacio entre los elementos */
+}
+
+
+
+
+
 
 .cut-out {
   -webkit-clip-path: inset(-100vw 0vw -100vw -100vw);
@@ -6570,7 +6626,7 @@ footer .bg-pattern {
 }
 
 .portfolio .work-row .item .main-marq .box .item {
-  padding: 0 60px;
+  
 }
 
 .portfolio .metro .items.height-1 {
@@ -7334,6 +7390,17 @@ body.inter-center {
   border: 2px solid #304C7D;
   padding: 30px;
 }
+.servicios-desktop .serv-item {
+  border-right: none;
+}
+
+@media all and (max-width: 768px) {
+  .serv-item {
+    border: 2px solid #304C7D;
+    padding: 30px;
+  }
+}
+
 .services .item-bord2 {
   padding: 60px 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -7426,6 +7493,43 @@ body.inter-center {
 .serv-box .crv-more a:hover {
   background: #fff;
   color: #181314;
+}
+
+.serv-item span {
+  display: inline;
+}
+
+.servicios-desktop .col-lg-3 {
+  padding: 0;
+}
+
+.row.servicios-desktop {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se adapten en pantallas más pequeñas */
+  box-shadow: 0px 0px 10px 3px #304C7D;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row.servicios-desktop .col-lg-3 {
+  display: flex;
+  flex-direction: column; /* Permite que los elementos internos se apilen verticalmente */
+}
+
+.row.servicios-desktop .serv-item {
+  flex: 1; /* Hace que todos los elementos sean de la misma altura */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que los elementos estén distribuidos uniformemente */
+  align-items: stretch; /* Asegura que el ancho sea consistente */
+  min-height: 100%; /* Evita que se colapsen los contenedores */
+}
+@media (min-width: 992px) { /* Solo para pantallas de escritorio */
+  .row.servicios-desktop .col-lg-3:nth-child(1),
+  .row.servicios-desktop .col-lg-3:nth-child(2),
+  .row.servicios-desktop .col-lg-3:nth-child(3) {
+      border-right: none !important; /* Elimina el borde de las primeras 3 columnas */
+  }
 }
 
 .maz-serv {
@@ -7612,6 +7716,17 @@ body.inter-center {
   background-size: cover;
   background-position: 50% 50%;
 }
+
+.services-crv .container {
+  max-width: 95%;
+}
+
+.services-crv .container .col-lg-6,
+.services-crv .container .col-lg-6 .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 
 /* Sobre mí
 -----------------------------------------------------------------*/
