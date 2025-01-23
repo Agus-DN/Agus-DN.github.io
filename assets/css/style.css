@@ -10931,6 +10931,48 @@ padding: 20px;
 .header-landing-portfolio {
   background-size: cover;
 }
+
+.header-anuncios-puv-eg,
+.header-retargeting-eg {
+  background-image:url('/../assets/imgs/landings/header-anuncios-puv-eg.jpg'); 
+}
+
+.header-anuncios-servicios-cz,
+.header-anuncios-clientes-cz,
+.header-videofolio-cz {
+  background-image: url('/../assets/imgs/landings/header-anuncios-servicios-cz.jpg');
+  
+}
+
+.header-anuncios-graficos-eg {
+  background-image: url('/../assets/imgs/landings/header-anuncios-graficos-eg.jpg');
+}
+
+.header-op-negocio-cf {
+  background-image: url('/../assets/imgs/landings/header-op-negocio-cf.jpg');
+}
+
+.header-muestra-producto-ic {
+  background-image: url('/../assets/imgs/landings/header-muestra-producto-ic.jpg');
+}
+
+.header-rebranding-eg {
+  background-image: url('/../assets/imgs/landings/header-rebranding-eg.jpg');
+}
+
+.header-plantillas-redes-cf,
+.header-novedades {
+  background-image: url('/../assets/imgs/landings/header-plantillas-redes-cf.jpg');
+}
+
+.header-propuestas-logotipo {
+  background-image: url('/../assets/imgs/landings/header-propuestas-logotipo.jpg');
+}
+
+.header-arroz-cz {
+  background-image: url('/../assets/imgs/landings/header-arroz-cz.jpg');
+}
+
 .header-anuncios-puv-eg {
   
   background-image:
