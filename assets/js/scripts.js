@@ -371,6 +371,19 @@ $(function () {
 
     });
 
+     // Tabs de sobre mi
+    $('.tab-links-exp').on('click', '.item-link-exp', function () {
+
+        var tab3_id = $(this).attr('data-tab-exp');
+
+        $('.tab-links-exp .item-link-exp').removeClass('current-exp');
+        $(this).addClass('current-exp');
+
+        $('.tab-content-exp').fadeOut();
+        $("#" + tab3_id).fadeIn();
+
+    });
+
 
     /* =============================================================================
     --------------------------------  Accordion  -----------------------------------
