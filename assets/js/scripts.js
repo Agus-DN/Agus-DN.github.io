@@ -371,7 +371,7 @@ $(function () {
 
     });
 
-     // Tabs de sobre mi
+    // Tabs de sobre mi
     $('.tab-links-exp').on('click', '.item-link-exp', function () {
 
         var tab3_id = $(this).attr('data-tab-exp');
@@ -383,6 +383,8 @@ $(function () {
         $("#" + tab3_id).fadeIn();
 
     });
+
+    
 
 
     /* =============================================================================
@@ -688,53 +690,58 @@ $(window).on("load", function () {
 
     
     
-    $('#tabs-ubicacion-nav li:first-child,#tabs-contratacion-arg-nav li:first-child,#tabs-contratacion-lat-nav li:first-child,#tabs-portfolio-mobile-nav li:first-child').addClass('active');
-    $('.tab-content').hide();
-    $('.tab-content:first').show();
+   // Inicialización de estado inicial
+$('#tabs-ubicacion-nav li:first-child, #tabs-contratacion-arg-nav li:nth-child(3), #tabs-contratacion-lat-nav li:nth-child(3), #tabs-portfolio-mobile-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+$('.tab-cont-content, .tab-cont-latam-content, .tab-portfolio-content').hide();
+$('.tab-portfolio-content').first().show();
+$('#tab_cont_tres, #tab_cont_tres_latam').show(); // Mostrar "40 hs /sem" por defecto
 
-    // Click function
-    $('#tabs-ubicacion-nav li').click(function(){
+// Click en tabs de ubicación
+$('#tabs-ubicacion-nav li').click(function () {
     $('#tabs-ubicacion-nav li').removeClass('active');
     $(this).addClass('active');
     $('.tab-content').hide();
-    
+
     var activeTab = $(this).find('a').attr('href');
     $(activeTab).fadeIn();
     return false;
-    });
+});
 
-    $('.tab-cont-content,.tab-cont-latam-content,.tab-portfolio-content').hide();
-    $('.tab-cont-content:first,.tab-cont-latam-content:first,.tab-portfolio-content:first').show();
+// Click en tabs de contratación (ARG)
+$('#tabs-contratacion-arg-nav li').click(function () {
+    $('#tabs-contratacion-arg-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-cont-content').hide();
 
-    $('#tabs-contratacion-arg-nav li').click(function(){
-        $('#tabs-contratacion-arg-nav li').removeClass('active');
-        $(this).addClass('active');
-        $('.tab-cont-content').hide();
-        
-        var activeTabCont = $(this).find('a').attr('href');
-        $(activeTabCont).fadeIn();
-        return false;
-    });
+    var activeTabCont = $(this).find('a').attr('href');
+    $(activeTabCont).fadeIn();
+    return false;
+});
 
-    $('#tabs-contratacion-lat-nav li').click(function(){
-        $('#tabs-contratacion-lat-nav li').removeClass('active');
-        $(this).addClass('active');
-        $('.tab-cont-latam-content').hide();
-        
-        var activeTabContLat = $(this).find('a').attr('href');
-        $(activeTabContLat).fadeIn();
-        return false;
-    });
+// Click en tabs de contratación (LATAM)
+$('#tabs-contratacion-lat-nav li').click(function () {
+    $('#tabs-contratacion-lat-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-cont-latam-content').hide();
 
-    $('#tabs-portfolio-mobile-nav li').click(function(){
-        $('#tabs-portfolio-mobile-nav li').removeClass('active');
-        $(this).addClass('active');
-        $('.tab-portfolio-content').hide();
-        
-        var activeTabConPortfolio = $(this).find('a').attr('href');
-        $(activeTabConPortfolio).fadeIn();
-        return false;
-    });
+    var activeTabContLat = $(this).find('a').attr('href');
+    $(activeTabContLat).fadeIn();
+    return false;
+});
+
+// Click en tabs de portfolio (mobile)
+$('#tabs-portfolio-mobile-nav li').click(function () {
+    $('#tabs-portfolio-mobile-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-portfolio-content').hide();
+
+    var activeTabConPortfolio = $(this).find('a').attr('href');
+    $(activeTabConPortfolio).fadeIn();
+    return false;
+});
+
 
     /* =============================================================================
     -----------------------------  Contact Valdition   -----------------------------
@@ -824,6 +831,26 @@ $(window).scroll(function () {
 });
 
 
+// VER SI FUNCIONA //
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash; // Obtiene el hash actual (e.g., #0)
+    if (hash) {
+      const targetElement = document.querySelector(hash); // Busca el elemento con el ID
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" }); // Desplaza al elemento
+      }
+    }
+  });
 
 /* =============================================================================
 -------------------------------  Wow Animation   -------------------------------
@@ -1097,7 +1124,7 @@ $(function () {
             };
         };
 
-        if ($(this).hasClass('testim-swiper2')) {
+        if ($(this).hasClass('slider-testimonios')) {
             var conf = {
 
                 pagination: {
@@ -1126,11 +1153,9 @@ $(function () {
                 }
             };
         };
-//
 
-/* NUEVOS JS */
 
-const tabLinks = document.querySelectorAll('.item-link-exp');
+        const tabLinks = document.querySelectorAll('.item-link-exp');
     const tabContents = document.querySelectorAll('.tab-content-exp');
 
     tabLinks.forEach(link => {
@@ -1187,11 +1212,7 @@ const tabLinks = document.querySelectorAll('.item-link-exp');
                 prevEl: '.swiper-button-prev',
             }
         });
-
-
-/* FIN NUEVOS JS */
-
-        
+//
         if ($(this).hasClass('testim-swiper3')) {
             var conf = {
 
@@ -1359,6 +1380,36 @@ const tabLinks = document.querySelectorAll('.item-link-exp');
                 },
             };
         };
+
+       // Suponiendo que ya tienes `tabLinks` y `tabContents` declarados:
+console.log(tabLinks, tabContents); // Para verificar que están correctamente definidos
+
+// Función para manejar el cambio de pestañas
+function activateTab(tabId) {
+    // Desactivar todas las pestañas y ocultar el contenido
+    tabLinks.forEach(link => link.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+
+    // Activar la pestaña seleccionada y mostrar su contenido
+    const activeLink = document.querySelector(`a[href="#${tabId}"]`);
+    const activeContent = document.getElementById(tabId);
+
+    if (activeLink) activeLink.classList.add('active'); // Activar pestaña
+    if (activeContent) activeContent.classList.add('active'); // Mostrar contenido
+}
+
+// Inicialización: Activar "40 hs /sem" por defecto
+activateTab('tab_cont_tres');
+
+// Añadir eventos a las pestañas (solo si no está hecho previamente)
+tabLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevenir el comportamiento por defecto
+        const tabId = link.getAttribute('href').substring(1); // Obtener el ID del contenido
+        activateTab(tabId);
+    });
+});
+
 
         if (items) {
             conf.slidesPerView = items
@@ -1573,5 +1624,3 @@ $(function () {
         });
     });
 })();
-
-
