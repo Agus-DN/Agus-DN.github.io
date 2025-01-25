@@ -1124,6 +1124,36 @@ $(function () {
             };
         };
 
+         if ($(this).hasClass('testim-swiper2')) {
+            var conf = {
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.testim-controls .swiper-button-next',
+                    prevEl: '.testim-controls .swiper-button-prev'
+                },
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 2,
+                    },
+                }
+            };
+        };
+
         if ($(this).hasClass('slider-testimonios')) {
             var conf = {
 
