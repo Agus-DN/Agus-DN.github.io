@@ -379,7 +379,7 @@ $(function () {
         $('.tab-links-exp .item-link-exp').removeClass('current-exp');
         $(this).addClass('current-exp');
 
-        $('.tab-content-exp').fadeOut();
+        //$('.tab-content-exp').fadeOut();
         $("#" + tab3_id).fadeIn();
 
     });
