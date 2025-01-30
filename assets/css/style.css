@@ -12274,5 +12274,7 @@ padding: 20px;
   padding-left: 0 !important;
 }
 
-
+.caso-portfolio.py-5 .swiper-slide {
+ flex-shrink: 1 !important;
+}
 
