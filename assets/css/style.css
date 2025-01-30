@@ -12278,3 +12278,7 @@ padding: 20px;
  flex-shrink: 1 !important;
 }
 
+.caso-portfolio.py-5 .swipper-wrapper {
+    gap: 20px !important;
+}
+
