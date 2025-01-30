@@ -12282,3 +12282,9 @@ padding: 20px;
     gap: 20px !important;
 }
 
+@media all and (min-width: 768px) {
+    .brief-pedido-descripcion {
+    width: 70%;
+    margin: 0 auto !important;
+}
+}
