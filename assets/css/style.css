@@ -12284,7 +12284,10 @@ padding: 20px;
 
 @media all and (min-width: 768px) {
     .brief-pedido-descripcion {
-    width: 70%;
-    margin: 0 auto !important;
+        width: 70%;
+        margin: 0 auto !important;
 }
+    .portfolio-brief-slider .swiper-wrapper {
+        gap: 20px;
+    }
 }
