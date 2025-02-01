@@ -11936,6 +11936,12 @@ padding: 20px;
   border-radius: 10px;
 }
 
+.brief-pedido .p-4,
+.brief-descripcion .p-4 {
+  padding: 20px !important;
+  
+}
+
 .brief-pedido-mobile,
 .brief-descripcion-mobile {
   width: 100% !important;
