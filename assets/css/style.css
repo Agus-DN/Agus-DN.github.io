@@ -11924,6 +11924,11 @@ padding: 20px;
   .header-datos-landing h1 {
     font-size: 64px;
   }
+
+  .brief-pedido,
+.brief-descripcion {
+  width: 48%;
+}
 }
 
 .brief-pedido-descripcion {
