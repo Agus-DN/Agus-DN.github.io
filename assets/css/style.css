@@ -12291,7 +12291,7 @@ padding: 20px;
     gap: 20px !important;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
     .brief-pedido-descripcion {
         width: 70%;
         margin: 0 auto !important;
@@ -12299,4 +12299,11 @@ padding: 20px;
     .portfolio-brief-slider .swiper-wrapper {
         gap: 20px;
     }
+}
+
+@media all and (max-width: 768px) {
+  .section-padding {
+    padding: 0;
+  }
+  
 }
