@@ -3096,7 +3096,7 @@ body.loaded {
   z-index: 999;
 }
 #smooth-wrapper > nav {
-  position: fixed;
+  
 }
 .navbar.nav-crev {
   width: calc(100% - 80px);
