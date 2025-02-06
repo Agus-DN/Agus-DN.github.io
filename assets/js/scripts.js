@@ -1113,6 +1113,36 @@ $(function () {
                 }
             };
         };
+
+        if ($(this).hasClass('mobile-slider')) {
+            var conf = {
+                pagination: {
+                    el: '.mobile-slider .swiper-pagination',
+                    clickable: true,
+                },
+        
+                navigation: {
+                    nextEl: '.mobile-slider .swiper-button-next',
+                    prevEl: '.mobile-slider .swiper-button-prev'
+                },
+        
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    1024: {
+                        slidesPerView: 1,
+                    },
+                }
+            };
+        }
+        
 //
         if ($(this).hasClass('testim-swiper3')) {
             var conf = {
