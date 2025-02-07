@@ -11359,6 +11359,9 @@ padding: 40px 30px;
   .item-link-mobile-content .tab-content__title {
     font-size: 25px;
   }
+  .herramientas {
+    display: none;
+  }
   
 }
 
