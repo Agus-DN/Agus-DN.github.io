@@ -11350,6 +11350,16 @@ padding: 40px 30px;
   .contenedor-titulo-herramientas {
     display: none;
   }
+  .item-link-mobile-content {
+    width: 90%;
+  }
+  .item-link-mobile-content {
+    margin-top: 40px;
+  }
+  .item-link-mobile-content .tab-content__title {
+    font-size: 25px;
+  }
+  
 }
 
 .her-icons-container {
@@ -11383,6 +11393,10 @@ padding: 40px 30px;
 .her-icon-legend {
   font-size: 14px;
   color: #fff;
+}
+
+.item-link-mobile-content .item ul.tab-content__list {
+  padding-left: 0 !important;
 }
 
 /* Estilos para escritorio */
