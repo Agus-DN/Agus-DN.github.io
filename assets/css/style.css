@@ -11146,7 +11146,7 @@ padding: 20px;
   
 }
 
-.swiper.sobre-mi-mobile {
+.swiper-sobre-mi-mobile.sobre-mi-mobile {
   width: 100%;
   height: 100%;
 }
@@ -11164,8 +11164,8 @@ padding: 20px;
   width: 160px;
 }
 
-.contenedor-sobre-mi-mobile .swiper .swiper-button-next,
-.contenedor-sobre-mi-mobile .swiper .swiper-button-prev {
+.contenedor-sobre-mi-mobile .swiper-sobre-mi .swiper-button-next,
+.contenedor-sobre-mi-mobile .swiper-sobre-mi .swiper-button-prev {
   top: 15%;  
 }
 

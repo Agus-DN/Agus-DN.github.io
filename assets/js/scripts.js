@@ -879,16 +879,13 @@ $(function () {
 
         };
 
-        if ($(this).hasClass('.sobre-mi-mobile')) {
+        if ($(this).hasClass('.swiper-sobre-mi-mobile')) {
             var conf = {
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
+                
         
                 navigation: {
-                    nextEl: '.sobre-mi-mobile .swiper-custom-button-next',
-                    prevEl: '.sobre-mi-mobile .swiper-custom-button-prev'
+                    nextEl: '.swiper-sobre-mi-button-next',
+                    prevEl: '.swiper-sobre-mi-button-prev'
                 },
         
                 breakpoints: {
