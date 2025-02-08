@@ -342,6 +342,24 @@ $(function () {
         }
     });
 
+    /* =============================================================================
+    ----------------------------------- Sobre mí -----------------------------------
+    ==============================================================================*/
+
+    var swiper = new Swiper(".swiper-custom", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-custom-button-next",
+            prevEl: ".swiper-custom-button-prev",
+        },
+        loop: true,
+        autoplay: {
+            delay: 4000, // Cambia cada 4 segundos automáticamente
+            disableOnInteraction: false,
+        },
+    });
+
 
     /* =============================================================================
     -----------------------------------  Tabs  -------------------------------------
