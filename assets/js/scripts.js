@@ -346,19 +346,10 @@ $(function () {
     ----------------------------------- Sobre mí -----------------------------------
     ==============================================================================*/
 
-    var swiper = new Swiper(".swiper-custom", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        navigation: {
-            nextEl: ".swiper-custom-button-next",
-            prevEl: ".swiper-custom-button-prev",
-        },
-        loop: true,
-        autoplay: {
-            delay: 4000, // Cambia cada 4 segundos automáticamente
-            disableOnInteraction: false,
-        },
-    });
+   
+
+    
+    
 
 
     /* =============================================================================
@@ -887,6 +878,36 @@ $(function () {
         var conf = {
 
         };
+
+        if ($(this).hasClass('.sobre-mi-mobile')) {
+            var conf = {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+        
+                navigation: {
+                    nextEl: '.sobre-mi-mobile .swiper-custom-button-next',
+                    prevEl: '.sobre-mi-mobile .swiper-custom-button-prev'
+                },
+        
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    1024: {
+                        slidesPerView: 1,
+                    },
+                }
+            };
+        };
+        
 
         // Responsive
         if ($(this).hasClass('swiper5')) {

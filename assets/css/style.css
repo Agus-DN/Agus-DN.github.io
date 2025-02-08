@@ -11139,235 +11139,38 @@ padding: 20px;
 
 /* Sobre mi */
 
-.sobre-mi {
-  background: linear-gradient(#050D29, #031963);
 
+/* Sobre mi mobile */
+.contenedor-sobre-mi-mobile {
+  position: relative;
+  
 }
 
-.sobre-mi .item-link-exp,
-.tab-slide-sobremi-mobile {
-  border-radius: 90px;
-  padding: 60px 0px;
-  text-align: center;
+.swiper.sobre-mi-mobile {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-sobre-mi-mobile {
   display: flex;
   flex-direction: column;
-  border: 1px solid #8D8D9B;
-  max-width: 150px;
-  transition: all .2s;
-  color: var(--gris);
-} 
-.sobre-mi .item-link-exp:hover {
-cursor: pointer;
-
-}
-#tabs-exp .item-link-exp:hover,
-#tabs-exp .item-link-exp.current-exp,
-#tabs-exp .item-link-exp.current,
-.sobre-mi .item-link-exp:hover h4,
-.sobre-mi .item-link-exp.current-exp h4 {
-background: #fff;
-color: var(--azul);
-}
-.sobre-mi .item-link-exp img,
-.tab-slide-sobremi-mobile img {
-  width: 95px;
-  margin: 0 auto;
-  }
-
-  .sobre-mi .item-link-exp.eg img,
-  .tab-slide-sobremi-mobile img {
-    width: 23px;
-  }
-
-  .sobre-mi .item-link-exp.cf img,
-  .tab-slide-sobremi-mobile img {
-    width: 40px;
-  }
-
-/* Ocultar por defecto las imágenes inactivas */
-.sobre-mi .item-link-exp .img-inactive {
-  display: none; /* Imagen gris no se muestra inicialmente */
+  align-items: center;
+  justify-content: center;
 }
 
-/* Tarjetas activas (mostrar imagen a color) */
-.sobre-mi .item-link-exp.current .img-active {
-  display: block; /* Mostrar la imagen activa */
-}
-
-.sobre-mi .item-link-exp.current .img-inactive {
-  display: none; /* Asegurarse de que la imagen gris esté oculta */
-}
-
-/* Tarjetas inactivas (mostrar imagen gris) */
-.sobre-mi .item-link-exp:not(.current) .img-active {
-  display: none; /* Ocultar la imagen a color */
-}
-
-.sobre-mi .item-link-exp:not(.current) .img-inactive {
-  display: block; /* Mostrar la imagen gris */
-}
-
-/* Hover sobre tarjetas inactivas (mostrar imagen a color temporalmente) */
-.sobre-mi .item-link-exp:not(.current-exp):hover .img-active {
-  display: block; /* Mostrar la imagen a color */
-}
-
-.sobre-mi .item-link-exp:not(.current-exp):hover .img-inactive {
-  display: none; /* Ocultar la imagen gris */
-}
-
-
-
-.sobre-mi .item-link-exp .item-link_texto {
-margin-top: 20px;
-}
-
-.sobre-mi .item-link-exp .item-link_texto span {
-font-size: 9px;
-display: block;
-}
-
-.sobre-mi .item-link-exp .item-link_texto h4 {
-font-size: 14px;
-margin-bottom: 5px;
-line-height: 1;
-}
-
-.tab-content-exp {
-  display: none;
-}
-
-.tab-content-exp.current-exp {
+.swiper-slide-sobre-mi-mobile img {
   display: block;
+  width: 100%;
+  width: 160px;
 }
 
-.sobre-mi-tab .exp-tab-cont h4,
-.sobre-mi-tab .exp-tab-cont h5 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 1;
-}
-
-
-.sobre-mi-tab .exp-tab-cont ul {
-  padding-left: 0;
-}
-.sobre-mi-tab .exp-tab-cont .item ,
-.sobre-mi-tab .exp-tab-cont .tab-content__list li {
-  margin-bottom: 30px;
-}
-
-.sobre-mi-tab .exp-tab-cont .tab-content__list li p {
-  line-height: 1.1;
-}
-
-.sobre-mi-tab .exp-tab-cont h4 {
-  font-size: 45px;
-}
-.sobre-mi-tab .exp-tab-cont h5 {
-  font-size: 1.6em;
-  margin-bottom: 5px;
-}
-
-.sobre-mi-tab .exp-tab-cont .item-exp {
-position: relative;
+.contenedor-sobre-mi-mobile .swiper .swiper-button-next,
+.contenedor-sobre-mi-mobile .swiper .swiper-button-prev {
+  top: 15%;  
 }
 
 
 
-.sobre-mi-tab .exp-tab-cont .item-exp .img {
-width: 70%;
-height: 540px;
-}
-
-.sobre-mi-tab .exp-tab-cont .item-exp .img img {
-width: 100%;
-height: 100%;
--o-object-fit: cover;
-object-fit: cover;
--o-object-position: center center;
-object-position: center center;
-}
-
-.sobre-mi-tab .exp-tab-cont .item-exp .cont {
-position: absolute;
-bottom: -80px;
-left: 20%;
-right: 0;
-padding: 80px 40px;
-}
-
-
-
-
-
-.sobre-mi-tab .half-img-left {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-position: left top;
-background-size: 50%;
-pointer-events: none;
-}
-
-.sobre-mi-tab.revers .exp-tab-cont .item-exp {
-position: relative;
-}
-
-.sobre-mi-tab.revers .exp-tab-cont .item-exp .img {
-width: 70%;
-margin-left: 30%;
-height: 540px;
-}
-
-.sobre-mi-tab.revers .exp-tab-cont .item-exp .img img {
-width: 100%;
-height: 100%;
--o-object-fit: cover;
-object-fit: cover;
--o-object-position: center center;
-object-position: center center;
-}
-
-.sobre-mi-tab.revers .exp-tab-cont .item-exp .cont {
-position: absolute;
-bottom: -2px;
-right: 30%;
-left: auto;
-padding: 60px 40px;
-}
-
-.sobre-mi-tab.revers .exp-tab-cont .item-exp .cont .bg-pattern {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-size: cover;
-background-position: bottom;
-pointer-events: none;
-}
-
-.sobre-mi-tab .exp-tab-cont .item .item-header {
-  margin-bottom: 30px;
-}
-
-.sobre-mi-tab .exp-tab-cont .item .img {
-width: 90%;
-}
-.sobre-mi-tab .exp-tab-cont .item .cont {
-left: 15px;
-}
-.sobre-mi-tab.revers .exp-tab-cont .item .img {
-width: 100%;
-margin-left: 0;
-}
-.sobre-mi-tab.revers .exp-tab-cont .item .cont {
-right: 5%;
-padding: 40px 30px;
-}
 
 @media only screen and (min-width: 769px) {
   .contenedor-sobre-mi-mobile {
@@ -11430,11 +11233,144 @@ padding: 40px 30px;
   transform: rotate(180deg);
 }
 
-@media all and (max-width: 768px) {
-.contenedor-sobre-mi-desktop {
+
+
+
+.sobre-mi {
+  background: linear-gradient(#050D29, #031963);
+}
+
+.sobre-mi .item-link-exp,
+.tab-slide-sobremi-mobile {
+  border-radius: 90px;
+  padding: 60px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #8D8D9B;
+  max-width: 150px;
+  transition: all .2s;
+  color: var(--gris);
+}
+
+.sobre-mi .item-link-exp:hover {
+  cursor: pointer;
+}
+
+#tabs-exp .item-link-exp:hover,
+#tabs-exp .item-link-exp.current-exp,
+#tabs-exp .item-link-exp.current,
+.sobre-mi .item-link-exp:hover h4,
+.sobre-mi .item-link-exp.current-exp h4 {
+  background: #fff;
+  color: var(--azul);
+}
+
+.sobre-mi .item-link-exp img,
+.tab-slide-sobremi-mobile img {
+  width: 95px;
+  margin: 0 auto;
+}
+
+.sobre-mi .item-link-exp.eg img,
+.tab-slide-sobremi-mobile img {
+  width: 23px;
+}
+
+.sobre-mi .item-link-exp.cf img,
+.tab-slide-sobremi-mobile img {
+  width: 40px;
+}
+
+/* Ocultar por defecto las imágenes inactivas */
+.sobre-mi .item-link-exp .img-inactive {
+  display: none; /* Imagen gris no se muestra inicialmente */
+}
+
+/* Tarjetas activas (mostrar imagen a color) */
+.sobre-mi .item-link-exp.current .img-active {
+  display: block; /* Mostrar la imagen activa */
+}
+
+.sobre-mi .item-link-exp.current .img-inactive {
+  display: none; /* Asegurarse de que la imagen gris esté oculta */
+}
+
+/* Tarjetas inactivas (mostrar imagen gris) */
+.sobre-mi .item-link-exp:not(.current) .img-active {
+  display: none; /* Ocultar la imagen a color */
+}
+
+.sobre-mi .item-link-exp:not(.current) .img-inactive {
+  display: block; /* Mostrar la imagen gris */
+}
+
+/* Hover sobre tarjetas inactivas (mostrar imagen a color temporalmente) */
+.sobre-mi .item-link-exp:not(.current-exp):hover .img-active {
+  display: block; /* Mostrar la imagen a color */
+}
+
+.sobre-mi .item-link-exp:not(.current-exp):hover .img-inactive {
+  display: none; /* Ocultar la imagen gris */
+}
+
+.sobre-mi .item-link-exp .item-link_texto {
+  margin-top: 20px;
+}
+
+.sobre-mi .item-link-exp .item-link_texto span {
+  font-size: 9px;
+  display: block;
+}
+
+.sobre-mi .item-link-exp .item-link_texto h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.tab-content-exp {
   display: none;
 }
-} 
+
+.tab-content-exp.current-exp {
+  display: block;
+}
+
+/* 🔹 SOLO MODIFIQUÉ ESTA PARTE PARA "sobre-mi-mobile" */
+@media all and (max-width: 768px) {
+  .contenedor-sobre-mi-mobile {
+    display: block !important;
+  }
+
+  .contenedor-sobre-mi-desktop {
+    display: none !important;
+  }
+
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.6;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--azul);
+  }
+}
+
+/* 🚀 SOLO SE MUESTRA EN DESKTOP */
+@media only screen and (min-width: 769px) {
+  .contenedor-sobre-mi-mobile {
+    display: none !important;
+  }
+}
 
 /* Herramientas */
 
@@ -11464,7 +11400,6 @@ padding: 40px 30px;
   .herramientas {
     display: none;
   }
-  
 }
 
 .her-icons-container {
@@ -11505,7 +11440,7 @@ padding: 40px 30px;
 }
 
 /* Estilos para escritorio */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .her-icons-container {
     display: flex;
     justify-content: center;
@@ -11519,12 +11454,13 @@ padding: 40px 30px;
 }
 
 /* Estilos para móviles (NO TOCADO) */
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
   .her-swiper-slide {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
 }
+
 
 
 
