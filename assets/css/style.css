@@ -11139,6 +11139,108 @@ padding: 20px;
 
 /* Sobre mi */
 
+.sobre-mi {
+  background: linear-gradient(#050D29, #031963);
+
+}
+
+.sobre-mi .item-link-exp,
+.tab-slide-sobremi-mobile {
+  border-radius: 90px;
+  padding: 60px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #8D8D9B;
+  max-width: 150px;
+  transition: all .2s;
+  color: var(--gris);
+} 
+.sobre-mi .item-link-exp:hover {
+cursor: pointer;
+
+}
+#tabs-exp .item-link-exp:hover,
+#tabs-exp .item-link-exp.current-exp,
+#tabs-exp .item-link-exp.current,
+.sobre-mi .item-link-exp:hover h4,
+.sobre-mi .item-link-exp.current-exp h4 {
+background: #fff;
+color: var(--azul);
+}
+.sobre-mi .item-link-exp img,
+.tab-slide-sobremi-mobile img {
+  width: 95px;
+  margin: 0 auto;
+  }
+
+  .sobre-mi .item-link-exp.eg img,
+  .tab-slide-sobremi-mobile img {
+    width: 23px;
+  }
+
+  .sobre-mi .item-link-exp.cf img,
+  .tab-slide-sobremi-mobile img {
+    width: 40px;
+  }
+
+/* Ocultar por defecto las imágenes inactivas */
+.sobre-mi .item-link-exp .img-inactive {
+  display: none; /* Imagen gris no se muestra inicialmente */
+}
+
+/* Tarjetas activas (mostrar imagen a color) */
+.sobre-mi .item-link-exp.current .img-active {
+  display: block; /* Mostrar la imagen activa */
+}
+
+.sobre-mi .item-link-exp.current .img-inactive {
+  display: none; /* Asegurarse de que la imagen gris esté oculta */
+}
+
+/* Tarjetas inactivas (mostrar imagen gris) */
+.sobre-mi .item-link-exp:not(.current) .img-active {
+  display: none; /* Ocultar la imagen a color */
+}
+
+.sobre-mi .item-link-exp:not(.current) .img-inactive {
+  display: block; /* Mostrar la imagen gris */
+}
+
+/* Hover sobre tarjetas inactivas (mostrar imagen a color temporalmente) */
+.sobre-mi .item-link-exp:not(.current-exp):hover .img-active {
+  display: block; /* Mostrar la imagen a color */
+}
+
+.sobre-mi .item-link-exp:not(.current-exp):hover .img-inactive {
+  display: none; /* Ocultar la imagen gris */
+}
+
+
+
+.sobre-mi .item-link-exp .item-link_texto {
+margin-top: 20px;
+}
+
+.sobre-mi .item-link-exp .item-link_texto span {
+font-size: 9px;
+display: block;
+}
+
+.sobre-mi .item-link-exp .item-link_texto h4 {
+font-size: 14px;
+margin-bottom: 5px;
+line-height: 1;
+}
+
+.tab-content-exp {
+  display: none;
+}
+
+.tab-content-exp.current-exp {
+  display: block;
+}
+
 .sobre-mi-tab .exp-tab-cont h4,
 .sobre-mi-tab .exp-tab-cont h5 {
   margin-bottom: 0;
@@ -11423,6 +11525,7 @@ padding: 40px 30px;
     max-width: 33.333%;
   }
 }
+
 
 
 
