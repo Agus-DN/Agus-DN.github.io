@@ -259,7 +259,9 @@ figure {
   --poppins: "Poppins";
 }
 
-
+.bg-rojo-brillante {
+  background: #FA0C4E;
+}
 
 .bg-verde {
   background: #309F71;
@@ -303,6 +305,10 @@ figure {
 
 .txt-celeste {
   color: #9FEAF4;
+}
+
+.txt-turquesa {
+  color: #82F0FF;
 }
 
 .main-color {
@@ -11176,7 +11182,8 @@ padding: 20px;
 
 
 @media only screen and (min-width: 769px) {
-  .contenedor-sobre-mi-mobile {
+  .contenedor-sobre-mi-mobile,
+  .swiper-sobre-mi-mobile {
     display: none !important;
   }
   .swiper-slide-sobre-mi-mobile:first-child {
@@ -11666,6 +11673,53 @@ background-position: 50% 50%;
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
+}
+
+
+
+/* Formacion */
+.item-img-texto {
+  padding: 20px;
+}
+
+.item-img-texto img {
+  width: 160px;
+}
+
+.item-img-texto h4 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.item-img-texto p {
+  font-family: var(--poppins);
+  
+  margin-top: 10px;
+}
+
+.txt-justificado {
+  text-align: justify;
+}
+.item-img-texto ul {
+  padding-left: 1rem;
+  list-style-position: inside;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item-img-texto ul,
+.item-img-texto ul li {
+  list-style: auto !important;
+  list-style-type: disc !important;
+  text-indent: 0px;
+  text-align: left;
+}
+
+.item-img-texto ul:not(first-child) {
+  display: inline-block !important;
+}
+
+.item-img-texto p ul li {
+  color: #fff !important;
 }
 
 
