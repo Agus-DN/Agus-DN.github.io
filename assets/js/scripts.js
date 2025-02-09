@@ -380,6 +380,23 @@ $(function () {
 
     });
 
+    const tabLinks = document.querySelectorAll('.item-link-exp');
+    const tabContents = document.querySelectorAll('.tab-content-exp');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const targetTab = link.getAttribute('data-tab-exp');
+
+            // Desactivar todas las pestañas y ocultar su contenido
+            tabLinks.forEach(tab => tab.classList.remove('current'));
+            tabContents.forEach(content => content.classList.remove('current-exp'));
+
+            // Activar la pestaña y su contenido correspondiente
+            link.classList.add('current');
+            document.getElementById(targetTab).classList.add('current-exp');
+        });
+    });
+
 
     /* =============================================================================
     --------------------------------  Accordion  -----------------------------------
