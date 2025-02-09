@@ -11337,6 +11337,208 @@ padding: 20px;
   display: block;
 }
 
+.sobre-mi-tab .exp-tab-cont h4,
+.sobre-mi-tab .exp-tab-cont h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
+}
+
+
+.sobre-mi-tab .exp-tab-cont ul {
+  padding-left: 0;
+}
+.sobre-mi-tab .exp-tab-cont .item ,
+.sobre-mi-tab .exp-tab-cont .tab-content__list li {
+  margin-bottom: 30px;
+}
+
+.sobre-mi-tab .exp-tab-cont .tab-content__list li p {
+  line-height: 1.1;
+}
+
+.sobre-mi-tab .exp-tab-cont h4 {
+  font-size: 45px;
+}
+.sobre-mi-tab .exp-tab-cont h5 {
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.sobre-mi-tab .exp-tab-cont .item-exp {
+position: relative;
+}
+
+
+
+.sobre-mi-tab .exp-tab-cont .item-exp .img {
+width: 70%;
+height: 540px;
+}
+
+.sobre-mi-tab .exp-tab-cont .item-exp .img img {
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+-o-object-position: center center;
+object-position: center center;
+}
+
+.sobre-mi-tab .exp-tab-cont .item-exp .cont {
+position: absolute;
+bottom: -80px;
+left: 20%;
+right: 0;
+padding: 80px 40px;
+}
+
+
+
+
+
+.sobre-mi-tab .half-img-left {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-position: left top;
+background-size: 50%;
+pointer-events: none;
+}
+
+.sobre-mi-tab.revers .exp-tab-cont .item-exp {
+position: relative;
+}
+
+.sobre-mi-tab.revers .exp-tab-cont .item-exp .img {
+width: 70%;
+margin-left: 30%;
+height: 540px;
+}
+
+.sobre-mi-tab.revers .exp-tab-cont .item-exp .img img {
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+-o-object-position: center center;
+object-position: center center;
+}
+
+.sobre-mi-tab.revers .exp-tab-cont .item-exp .cont {
+position: absolute;
+bottom: -2px;
+right: 30%;
+left: auto;
+padding: 60px 40px;
+}
+
+.sobre-mi-tab.revers .exp-tab-cont .item-exp .cont .bg-pattern {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: bottom;
+pointer-events: none;
+}
+
+.exp-cards-flex {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos pasen a la siguiente fila */
+  justify-content: center; /* Centrar elementos en cada fila */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .exp-cards-flex > li {
+  flex: 1 1 calc(33.333% - 20px); /* Tres elementos por fila con espacio entre ellos */
+  /* max-width: calc(33.333% - 20px) !important;  Asegurar que no excedan el ancho */
+  box-sizing: border-box; /* Incluir paddings y borders en el ancho total */
+  }
+  
+  .exp-cards-flex > li:nth-child(4),
+  .exp-cards-flex > li:nth-child(5) {
+  flex: 1 1 calc(50% - 20px); /* Ocupan 50% del ancho cada una 
+  /* max-width: calc(50% - 20px);*/
+  }
+  
+
+.exp-img-reveal .block__title {
+-webkit-transition: all .4s;
+-o-transition: all .4s;
+transition: all .4s;
+}
+
+.exp-img-reveal .block__title:hover {
+border-color: #eee;
+}
+
+.exp-img-reveal .block[data-fx="1"] a::after,
+.exp-img-reveal a.content__text-link[data-fx="1"]::after {
+content: '';
+z-index: -1;
+width: 100%;
+bottom: 0.25rem;
+left: 0;
+position: absolute;
+height: 2px;
+background: currentColor;
+-webkit-transform: scale3d(0, 1, 1);
+transform: scale3d(0, 1, 1);
+-webkit-transform-origin: 0% 50%;
+-ms-transform-origin: 0% 50%;
+transform-origin: 0% 50%;
+-webkit-transition: -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+transition: -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+-o-transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.exp-img-reveal a.content__text-link[data-fx="1"]::after {
+bottom: 0;
+}
+
+.exp-img-reveal .hover-reveal {
+position: fixed;
+width: 240px;
+height: 180px;
+top: 0;
+left: 0;
+pointer-events: none;
+opacity: 0;
+-webkit-transform: rotate(-15deg) translateY(-90px) translateX(50px);
+-ms-transform: rotate(-15deg) translateY(-90px) translateX(50px);
+transform: rotate(-15deg) translateY(-90px) translateX(50px);
+}
+
+.exp-img-reveal .hover-reveal__inner,
+.exp-img-reveal .hover-reveal__img {
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+.exp-img-reveal .hover-reveal__deco {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #181314;
+}
+
+.exp-img-reveal .hover-reveal__img {
+background-size: cover;
+background-position: 50% 50%;
+}
+
 /* 🔹 SOLO MODIFIQUÉ ESTA PARTE PARA "sobre-mi-mobile" */
 @media all and (max-width: 768px) {
   .contenedor-sobre-mi-mobile {
