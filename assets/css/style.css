@@ -254,6 +254,9 @@ figure {
 :root {
   --azul-claro: rgba(27, 45, 77, .8);
   --azul-oscuro: rgba(12, 22, 40, .8);
+  --azul: #031963;
+  --gris: #8D8D9B;
+  --poppins: "Poppins";
 }
 
 
@@ -11538,6 +11541,8 @@ background-color: #181314;
 background-size: cover;
 background-position: 50% 50%;
 }
+
+
 
 /* 🔹 SOLO MODIFIQUÉ ESTA PARTE PARA "sobre-mi-mobile" */
 @media all and (max-width: 768px) {
