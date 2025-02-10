@@ -348,7 +348,7 @@ figure {
 }
 
 .sub-bg {
-  background-color: #0C1628;
+  background-color: #050D29;
 }
 
 .bg-gray1 {
@@ -3106,7 +3106,7 @@ body.loaded {
 }
 
 .navbar.main-bg {
-  background: #1B2D4D;
+  background: #050D29;
   border-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -8826,6 +8826,34 @@ header.in-box {
   background-position: left top;
 }
 
+/* Igualar testimonios */
+.testim-swiper2 .swiper-wrapper {
+  display: flex;
+  align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.testim-swiper2 .swiper-slide {
+  display: flex;
+  height: auto; /* Permite que la altura se ajuste al contenido más grande */
+}
+
+.testim-swiper2 .swiper-slide .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido de forma uniforme */
+  height: 100%; /* Igual altura para todas las tarjetas */
+  
+}
+
+.testim-swiper2 .swiper-slide .cont {
+  flex-grow: 1; /* Hace que el contenido crezca uniformemente */
+}
+
+.testim-swiper2 .swiper-slide .d-flex {
+  align-items: center;
+}
+
+
 .testim-corp {
   position: relative;
   overflow: hidden;
@@ -10705,7 +10733,7 @@ padding: 20px;
 
 
 .navbar.nav-scroll {
-  background: #1B2D4D;
+  background: #050D29;
 }
 
 .header-buttons button:last-child {
