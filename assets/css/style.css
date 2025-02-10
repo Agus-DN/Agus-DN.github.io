@@ -5949,6 +5949,74 @@ footer .bg-pattern {
   font-size: 35px;
 }
 
+/*prueba */
+.marquee-portfolio-wrapper {
+  position: relative;
+  background: #FA0C4E;
+  height: 80px;
+}
+
+.marquee-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; 
+  z-index: 0; 
+  transform: skewY(-1deg); 
+  transform-origin: top left; 
+}
+
+.marquee-portfolio {
+  position: absolute;
+  z-index: 1; /* Por encima del fondo */
+  background-color: #050D29; /* Azul oscuro */
+  padding: 20px 0; /* Espaciado del contenido */
+  overflow: hidden;
+  transform: skewY(-1deg);
+  margin-top: -25px; 
+}
+
+.marquee-portfolio .main-marq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-portfolio .slide-har {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-portfolio .box {
+  display: flex;
+  gap: 50px; /* Espacio entre los elementos */
+}
+
+
+@media all and (max-width: 768px) {
+  .marquee-portfolio-wrapper {
+    height: 100px !important;
+    background: #FA0C4E;
+    padding-top: 10px !important;
+    padding-bottom: 60px !important;
+    transform: rotate(1deg);
+     }
+
+  .marquee.marquee-portfolio {
+    height: 90px;
+    top: -40px;
+    transform: rotate(-2deg);
+  }
+
+  .crev-header {
+    padding-bottom: 80px !important;
+   
+  }
+}
+
 .cut-out {
   -webkit-clip-path: inset(-100vw 0vw -100vw -100vw);
   clip-path: inset(-100vw 0vw -100vw -100vw);
