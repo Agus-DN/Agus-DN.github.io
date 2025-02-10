@@ -896,13 +896,16 @@ $(function () {
 
         };
 
-        if ($(this).hasClass('.swiper-sobre-mi-mobile')) {
+        if ($(this).hasClass('swiper-sobre-mi-mobile')) {
             var conf = {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 
-        
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
+                    nextEl: '.swiper-sobre-mi-mobile .swiper-button-next',
+                    prevEl: '.swiper-sobre-mi-mobile .swiper-button-prev'
                 },
         
                 breakpoints: {
