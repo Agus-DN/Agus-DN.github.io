@@ -7325,6 +7325,29 @@ body.inter-center {
   padding-left: 0;
   padding-right: 0;
 }
+.servicios-desktop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.servicios-desktop .col-lg-3 {
+  display: flex;
+}
+
+.serv-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.serv-item > div {
+  flex-grow: 1;
+}
+
+.serv-item a {
+  align-self: flex-start;
+}
+
 
 
 .services .arrow .circle {
