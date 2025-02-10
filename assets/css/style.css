@@ -7316,6 +7316,17 @@ body.inter-center {
   z-index: 2;
 }
 
+.services-crv .container {
+  max-width: 95%;
+}
+
+.services-crv .container .col-lg-6,
+.services-crv .container .col-lg-6 .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 .services .arrow .circle {
   width: 40px;
   height: 40px;
