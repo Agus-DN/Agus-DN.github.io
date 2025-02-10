@@ -751,7 +751,19 @@ $(window).on("load", function () {
 
     /* Tabs cotizaciones */
 
-   
+    $('#tabs-contratacion-arg-nav li').removeClass('active');
+    $('.tab-cont-content').hide();
+
+    // Seleccionamos la pestaña de 40 hs / sem
+    $('#tabs-contratacion-arg-nav li a[href="#tab_cont_tres"]').parent().addClass('active');
+    $('#tab_cont_tres').fadeIn();
+
+    // Hacemos lo mismo para LATAM
+    $('#tabs-contratacion-lat-nav li').removeClass('active');
+    $('.tab-cont-latam-content').hide();
+
+    $('#tabs-contratacion-lat-nav li a[href="#tab_cont_tres_latam"]').parent().addClass('active');
+    $('#tab_cont_tres_latam').fadeIn();
 
     /* =============================================================================
     -----------------------------  Contact Valdition   -----------------------------
