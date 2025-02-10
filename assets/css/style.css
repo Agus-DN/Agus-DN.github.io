@@ -7289,7 +7289,7 @@ body.inter-center {
 /* Services
 -----------------------------------------------------------------*/
 .services-crv {
-  background: linear-gradient(329.57deg, #0E192C -0.91%, #1C2E4E 82.93%);
+  background: linear-gradient(#031963, #050D29);
   margin-top: -40px;
 }
 .services-crv .crle-item {
