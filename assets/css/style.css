@@ -7768,7 +7768,7 @@ body.inter-center {
 /* Portfolio 
 -----------------------------------------------------------------*/
 .portfolio-crv {
-  background: linear-gradient(335deg, #1B2D4D 16.66%, #0C1628 106.22%);
+  background: linear-gradient(#031963,#050D29);
 }
 .portfolio-crv .nav-tabs .nav-item .nav-link{
   font-family: 'Roboto';
