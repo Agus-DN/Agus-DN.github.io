@@ -10885,6 +10885,9 @@ padding: 20px;
   }
   .header-tags .tag {
     font-size: 11px !important;
+    text-align: center;
+    /* align-items: center; */
+    align-content: center;
   }
   .header-buttons {
     width: 100%;
