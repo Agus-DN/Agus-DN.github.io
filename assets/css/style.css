@@ -10939,6 +10939,10 @@ padding: 20px;
     background: none;
   }
 
+  .servicios-mobile .testim-swiper2 .swiper-slide .d-flex {
+    height: 580px;
+  }
+
   .sobre-mi-crv {
     background: #0C1628;
   }
