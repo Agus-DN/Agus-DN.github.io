@@ -901,8 +901,8 @@ $(function () {
                 
         
                 navigation: {
-                    nextEl: '.swiper-sobre-mi-button-next',
-                    prevEl: '.swiper-sobre-mi-button-prev'
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
                 },
         
                 breakpoints: {
