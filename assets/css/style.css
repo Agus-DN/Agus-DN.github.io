@@ -11891,6 +11891,143 @@ background-position: 50% 50%;
 
 
 
+/* LANDINGS PORTFOLIO */
+
+.caso-portfolio {
+  background: linear-gradient(#050D29 40%, #031963);
+}
+
+.caso-portfolio_videos .swiper-slide .card {
+  background-color:rgba(0,0,0,0) !important;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container-portfolio {
+  max-width: 1600px; 
+  padding-left: 15px; 
+  padding-right: 15px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.container-portfolio .swiper-container {
+  padding-bottom: 20px;
+}
+@media all and (min-width: 769px) {
+  .container-portfolio.retargeting .portfolio-slider .swiper-slide,
+  .container-portfolio.ecommerce-eg .portfolio-slider .swiper-slide {
+    width: 600px !important;
+  }
+}
+
+
+
+.portfolio-slider .swiper-button-prev,
+.portfolio-slider .swiper-button-next {
+  color: #000; /* Ajusta el color de los botones */
+  display: block; /* Asegura que sean visibles */
+}
+
+.portfolio-slider .swiper-pagination-bullet {
+  background: #007bff; /* Personaliza el color de los bullets */
+}
+
+.portfolio-slider .card {
+  border: none;
+}
+
+/* Ocultar controles en desktop */
+@media (min-width: 768px) {
+  .container-portfolio .swiper-controls {
+    display: none !important; /* Oculta los controles personalizados en desktop */
+  }
+
+  .swiper-wrapper {
+    justify-content: center !important;
+  }
+
+  #seccion-testimonios .swiper-wrapper {
+    justify-content: flex-start !important;
+  }
+
+  .caso-portfolio_videos .swiper-slide {
+    margin-right: 0px !important;
+  }
+  #portfolio-section-mobile {
+    display: none !important;
+  }
+}
+
+/* Espaciado entre videos en el slider */
+.portfolio-slider .portfolio-slider-slide {
+  margin: 0 15px; /* Espaciado entre los videos */
+}
+
+/* Opcional: Ajustes visuales del video */
+.portfolio-slider video,
+.portfolio-slider img {
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+
+/* Estilo general de las tarjetas */
+/* Espaciado entre filas */
+.portfolio-brief-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Separación entre filas */
+}
+
+.portfolio-brief-slider .brief-pedido, 
+.portfolio-brief-slider .brief-descripcion {
+  border: 2px solid #304C7D;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.caso-portfolio_brief .swiper-slide {
+  display: flex !important;
+  align-items: stretch; /* Asegura que las tarjetas ocupen todo el espacio */
+}
+
+
+.caso-portfolio_brief .swiper-slide > div {
+  flex: 1; /* Hace que las tarjetas se estiren uniformemente */
+}
+
+
+@media all and (max-width: 768px) {
+  .container-portfolio {
+    padding: 0 25px;
+  }
+  .caso-portfolio_brief .col-lg-9 {
+    padding: 0px;
+  }
+
+  .caso-portfolio_videos .swiper-slider,
+  .caso-portfolio_brief .swiper-slide {
+    width: 100%;
+   
+  }
+  .row-brief {
+    display: block !important;
+  }
+}
+
+.portfolio-viejo {
+  display: none;
+}
+
+.footer-container {
+  padding: 50px;
+}
+
+
+
 
 
 
