@@ -11153,6 +11153,9 @@ padding: 20px;
   text-align: center !important;
   margin: 0 auto;
 }
+.header-datos > img {
+  max-width: 180px;
+}
 .brief-pedido-descripcion {
   align-items: stretch !important;
   justify-content: space-around;
