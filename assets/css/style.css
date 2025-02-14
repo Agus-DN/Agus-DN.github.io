@@ -11906,7 +11906,14 @@ background-position: 50% 50%;
   background-color:rgba(0,0,0,0) !important;
   border-radius: 10px;
   padding: 10px;
+  max-width: 300px;
 }
+.caso-portfolio_videos .swiper-slide{
+justify-content: center;
+    display: flex;
+}
+
+
 
 .container-portfolio {
   max-width: 1600px; 
