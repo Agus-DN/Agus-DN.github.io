@@ -912,6 +912,10 @@ $(function () {
 
         };
 
+        
+        
+
+
         if ($(this).hasClass('swiper-sobre-mi-mobile')) {
             var conf = {
                 pagination: {
@@ -1373,6 +1377,35 @@ $(function () {
                 }
             };
         };
+
+
+        // Swiper de brief
+
+        if ($(this).hasClass('portfolio-brief-slider')) {
+            var conf = {
+                loop: true,
+                navigation: {
+                    nextEl: '.portfolio-brief-controls .swiper-button-next',
+                    prevEl: '.portfolio-brief-controls .swiper-button-prev'
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    1024: {
+                        slidesPerView: 1,
+                    },
+                }
+            };
+        };
+        
+
 
         if ($(this).hasClass('pagination')) {
             var conf = {
