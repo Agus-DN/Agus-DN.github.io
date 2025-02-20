@@ -6908,6 +6908,10 @@ footer .bg-pattern {
   bottom: 25px !important;
 }
 
+.gallery-portfolio-desktop img {
+  border-radius: 8px;
+}
+
 .work-carsouel {
   position: relative;
 }
@@ -11193,14 +11197,22 @@ padding: 20px;
 }
 
 .contenedor-video video,
-.contenedor-video iframe{
+.contenedor-video iframe {
   border-radius: 20px;
   height: 300px;
   background-size: 100%;
 }
-.contenedor-video video {
-  
+
+.contenedor-img img {
+  width: 300px;
+  border-radius: 20px;
+  margin: 0 auto;
 }
+
+.contenedor-img {
+  text-align: center;
+}
+
 .contenedor-imagen {
   text-align: center;
 }
