@@ -11246,9 +11246,10 @@ padding: 20px;
   #smooth-wrapper {
    overflow-x: hidden;
   }
-  body {
-    
-  }
+  .brief-pedido,
+.brief-descripcion {
+  width: 100%;
+}
   .nav-link-mobile img {
     width: 40px;
   }
