@@ -6912,6 +6912,11 @@ footer .bg-pattern {
   border-radius: 8px;
 }
 
+.gallery-portfolio-desktop .row.masonry {
+  margin: 0 auto !important;
+  text-align: center;
+}
+
 .work-carsouel {
   position: relative;
 }
