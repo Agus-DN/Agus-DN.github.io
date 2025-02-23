@@ -5947,6 +5947,13 @@ footer .bg-pattern {
   width: 2000px;
 }
 
+@media (max-width: 768px) { 
+  .marquee-pr {
+    height: 100px;
+    margin-top: -90px;
+  }
+}
+
 @media (min-width: 769px) {
   .marquee-pr-fondo {
     top: 25px;
