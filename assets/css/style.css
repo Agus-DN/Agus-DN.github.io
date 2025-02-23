@@ -7413,17 +7413,28 @@ body.inter-center {
 }
 
 .serv-item {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   height: 100%;
+  border: 2px solid #304C7D;
+  padding: 30px;
+  justify-content: space-between;
 }
 
-.serv-item > div {
-  flex-grow: 1;
+
+
+.serv-item-content .icon-img img {
+  width: 75px;
+  height: 75px;
 }
 
 .serv-item a {
   align-self: flex-start;
+}
+
+.serv-item .link-contact a img {
+  width: 39px;
+  height: 40px;
 }
 
 
@@ -7451,10 +7462,7 @@ body.inter-center {
 .services .item-bord:last-of-type {
   border: 0;
 }
-.serv-item {
-  border: 2px solid #304C7D;
-  padding: 30px;
-}
+
 .services .item-bord2 {
   padding: 60px 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -10418,7 +10426,7 @@ header.in-box {
   }
   .serv-box .serv-item {
     padding: 50px 30px;
-    display: block !important;
+    
   }
   .serv-box .serv-item .icon-img-80 {
     width: 60px;
