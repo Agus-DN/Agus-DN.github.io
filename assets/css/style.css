@@ -12055,6 +12055,10 @@ justify-content: center;
   border: none;
 }
 
+.portfolio-ecommerce h6 {
+  border: 2px solid #fff;
+}
+
 /* Ocultar controles en desktop */
 @media (min-width: 768px) {
   .container-portfolio .swiper-controls {
