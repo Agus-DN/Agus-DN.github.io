@@ -12057,6 +12057,8 @@ justify-content: center;
 
 .portfolio-ecommerce h6 {
   border: 2px solid #fff;
+  padding: 5px 25px;
+  border-radius: 30px;
 }
 
 /* Ocultar controles en desktop */
