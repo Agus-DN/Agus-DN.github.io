@@ -7922,7 +7922,7 @@ body.inter-center {
 
 /* Portfolio 
 -----------------------------------------------------------------*/
-.portfolio-crv {
+.portfolio {
   background: linear-gradient(#031963,#050D29);
 }
 .portfolio-crv .nav-tabs .nav-item .nav-link{
@@ -12061,6 +12061,10 @@ justify-content: center;
   border-radius: 30px;
 }
 
+
+
+
+
 /* Ocultar controles en desktop */
 @media (min-width: 768px) {
   .container-portfolio .swiper-controls {
@@ -12161,7 +12165,13 @@ justify-content: center;
 
 
 
+.portfolio-ms.portfolio-crv {
+  background-color: #050D29 !important;
+}
 
+.portfolio-brief {
+  background: linear-gradient(#050D29,#031963);
+}
 
 
 
