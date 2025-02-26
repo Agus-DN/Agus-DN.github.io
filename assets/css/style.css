@@ -5921,7 +5921,7 @@ footer .bg-pattern {
 }
 
 .marquee-pr-fondo {
-  background-color: #DC3A5C;
+  background-color: #FA0C4E;
   -webkit-transform: rotate(1deg);
   -ms-transform: rotate(1deg);
   transform: rotate(1deg);
@@ -5949,8 +5949,8 @@ footer .bg-pattern {
 
 @media (max-width: 768px) { 
   .marquee-pr {
-    height: 100px;
-    margin-top: -90px;
+    height: 140px;
+    margin-top: -70px;
   }
 }
 
