@@ -19,6 +19,9 @@
 
     <script src="/assets/js/cargarFuentes.js" defer></script>
 
+    <!-- Loader -->
+    <script src="/assets/js/loader.js" defer></script>
+
 
     <!-- Plugins -->
     <link rel="stylesheet" href="../../assets/css/plugins.css">
@@ -34,23 +37,30 @@
 
     <!-- ==================== Start Loading ==================== -->
     
-    <div class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
+    <div id="loader-placeholder"></div>
+<script>
+    let url = window.location.pathname.toLowerCase();
+    let lang = url.includes("/eng/") ? "en" : "es"; // Detectar idioma por la URL
 
-        <div class="loader-wrap-heading">
-            <div class="load-text">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-            </div>
-        </div>
-    </div>
+    let loaderFile = lang === "en" ? "/assets/componentes/loader-en.html" : "/assets/componentes/loader-es.html";
+
+    fetch(loaderFile)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error cargando el loader");
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById("loader-placeholder").innerHTML = html;
+            console.log("Loader cargado correctamente:", html);
+        })
+        .catch(error => console.error("Error:", error));
+</script>
+
+
+
+    
     
     <!-- ==================== End Loading ==================== -->
 
