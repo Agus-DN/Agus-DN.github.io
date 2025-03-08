@@ -11194,6 +11194,12 @@ padding: 20px;
   background-image:url('/../assets/imgs/landings/header-lead-magnet-cz.jpg');
 }
 
+.header-arroz-sos-cz {
+  background-image:url('/../assets/imgs/landings/header-arroz-cz.jpg');
+}
+
+
+
 .header-anuncios-mibo {
   background-image:
   linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(32, 42, 150, .8)),
@@ -11238,9 +11244,12 @@ padding: 20px;
 }
 
 .header-anuncios-servicios-cz,
-.header-videofolio-cz {
+.header-videofolio-cz,
+.header-anuncios-clientes-cz {
   background-image:url('/../assets/imgs/landings/header-anuncios-servicios-cz.jpg');
 }
+
+ 
 
 
 .video-der {
