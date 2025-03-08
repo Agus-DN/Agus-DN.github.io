@@ -11167,21 +11167,36 @@ padding: 20px;
 .header-landing-portfolio {
   background-size: cover;
 }
-.header-anuncios-puv-eg {
-  
-  background-image:
-    linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
-    url('/../assets/imgs/landings/header-anuncios-puv-eg.jpg');
+
+.header-landing-portfolio .col-lg-6 {
+  width: 80%;
+}
+
+@media all and (min-width: 769px) {
+  .header-landing-portfolio .col-lg-6 p {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+
+.header-anuncios-puv-eg,
+.header-anuncios-catalogo-chill {
+  background-image:url('/../assets/imgs/landings/header-anuncios-puv-eg.jpg');
     
 }
-.header-anuncios-catalogo-chill {
-  background-image:
-  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
-  url('/../assets/imgs/landings/fondo-chill.jpg');
+
+.header-plantillas-redes-cf,
+.header-op-negocio {
+  background-image:url('/../assets/imgs/landings/header-op-negocio-cf.jpg');
 }
+
+.header-lead-magnet-cz {
+  background-image:url('/../assets/imgs/landings/header-lead-magnet-cz.jpg');
+}
+
 .header-anuncios-mibo {
   background-image:
-  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
+  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(32, 42, 150, .8)),
   url('/../assets/imgs/landings/fondo-mibo.jpg');
 }
 .header-anuncios-graficos-eg {
@@ -11210,11 +11225,7 @@ padding: 20px;
   linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
   url('/../assets/imgs/landings/fondo-novedades.jpg');
 }
-.header-op-negocio {
-  background-image:
-  linear-gradient(to bottom, rgba(27, 45, 77, .8), rgba(12, 22, 40, .8)),
-  url('/../assets/imgs/landings/fondo-op-negocio.jpg');
-}
+
 .header-plantillas-rss {
   background-image:
   linear-gradient(to bottom, rgba(27, 45, 77, .95), rgba(12, 22, 40, .95)),
@@ -11225,6 +11236,13 @@ padding: 20px;
   linear-gradient(to bottom, rgba(27, 45, 77, .95), rgba(12, 22, 40, .95)),
   url('/../assets/imgs/landings/fondo-rebranding.png');
 }
+
+.header-anuncios-servicios-cz,
+.header-videofolio-cz {
+  background-image:url('/../assets/imgs/landings/header-anuncios-servicios-cz.jpg');
+}
+
+
 .video-der {
   text-align: right !important;
 }
