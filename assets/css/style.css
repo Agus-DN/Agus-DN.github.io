@@ -10927,6 +10927,9 @@ padding: 20px;
   background: url(/assets/imgs/header/fondo-header.jpg);
   overflow: hidden;
 }
+.header-portfolio {
+  padding-top: 80px;
+}
 @media all and (max-width: 768px) {
   .titulo-web-mobile {
     display: block;
@@ -11588,6 +11591,8 @@ padding: 20px;
   display: none;
 }
 
+
+
 .tab-content-exp.current-exp {
   display: block;
 }
@@ -11796,7 +11801,7 @@ background-position: 50% 50%;
 
 
 
-/* 🔹 SOLO MODIFIQUÉ ESTA PARTE PARA "sobre-mi-mobile" */
+/* "sobre-mi-mobile" */
 @media all and (max-width: 768px) {
   .contenedor-sobre-mi-mobile {
     display: block !important;
@@ -11855,6 +11860,10 @@ background-position: 50% 50%;
 @media only screen and (min-width: 769px) {
   .contenedor-sobre-mi-mobile {
     display: none !important;
+  }
+  .tab-content-exp .item-exp .tab-content__list {
+    margin-top: 20px;
+
   }
 }
 
